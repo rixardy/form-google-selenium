@@ -5,7 +5,7 @@
   <artifactId>ProjetosTestedeSoftware</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>ProjetosTestedeSoftware</name>
+  <name>FormularioGoogleSelenium</name>
   <url>http://maven.apache.org</url>
 
   <!-- Arquivo de propriedades do projeto -->

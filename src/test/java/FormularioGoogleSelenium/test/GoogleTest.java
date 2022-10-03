@@ -1,6 +1,6 @@
-package ProjetosTestedeSoftware.test;
+package FormularioGoogleSelenium.test;
 
-import ProjetosTestedeSoftware.page.GooglePO;
+import FormularioGoogleSelenium.page.GooglePO;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
