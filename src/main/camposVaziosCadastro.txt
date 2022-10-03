@@ -1,0 +1,36 @@
+Projeto: Cadastro de Clientes | ID: CT-01
+Ambiente: Web, Chrome, Firefox
+Autor: Ricardo Carvalho Pires
+Título: Não cadastrar com campos vazios
+
+
+Objetivo do teste:
+
+    Verificar se o cadastro é realizado com campos vazios.
+
+Pré-condições:
+
+    1. Formulário é carregado com os campos vazios;
+
+Ações:
+
+    1 - Acessar a tela do formulário através do link: https://forms.gle/zUvT3uQu4AGC7gr47;
+    2 - Logar no gmail;
+    3 - Não preencher os campos:
+        • Nome;
+        • E-mail;
+        • Cartão de crédito(Bandeira);
+        • Número do cartão;
+        • Data de nascimento.
+    4 - Clicar em enviar;
+    5 - Verificar banco de dados.
+
+Resultados esperados:
+
+    1 - Após clicar em enviar o foco muda para o primeiro campo obrigatório;
+    2 - O formulário não é submetido;
+    3 - O cliente permanece na tela de cadastro.
+    4 - Nenhum dado é salvo no banco.
+
+
+

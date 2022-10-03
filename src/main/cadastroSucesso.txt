@@ -1,0 +1,41 @@
+Projeto: Cadastro de Clientes | ID: CT-6
+Ambiente: Web, Chrome, Firefox
+Autor: Ricardo Carvalho Pires
+Título: Cadastro de clientes no sistema
+
+
+Objetivo do teste:
+
+    Verificar se o formulário realiza o cadastro do cliente ao preencher nome, e-mail,
+    bandeira do cartão de crédito, número do cartão de crédito e data de nascimento corretamente.
+
+Pré-condições:
+
+    1. Formulário é carregado com os campos vazios;
+    2. Todos os campos são obrigatórios;
+    3. O nome não pode conter caracteres especiais ou números.
+    4. O e-mail tem que conter "@" e ".com"
+    5. Preencher apenas uma bandeira do cartão;
+    6. Inserir número de cartão válido;
+    7. Inserir data de nascimento válida.
+
+Ações:
+
+    1 - Acessar a tela do formulário através do link: https://forms.gle/zUvT3uQu4AGC7gr47;
+    2 - Preencher os campos com dados válidos:
+        • Nome;
+        • E-mail;
+        • Cartão de crédito(Bandeira);
+        • Número do cartão;
+        • Data de nascimento.
+    3 - Clicar em enviar;
+    4 - Verificar se o cadastro do cliente foi salvo.
+
+Resultados esperados:
+
+    1 - Após clicar em enviar é exibida a mensagem de sucesso: "Seu cadastro foi realizado com sucesso!";
+    2 - O formulário foi submetido;
+    3 - Os dados do cliente são salvos no banco.
+
+
+

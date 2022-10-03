@@ -1,0 +1,30 @@
+Projeto: Cadastro de Clientes | ID: CT-07
+Ambiente: Web, Chrome, Firefox
+Autor: Ricardo Carvalho Pires
+Título: Cliente cadastrado
+
+
+Objetivo do teste:
+
+    Apresentar aviso que o formulário já foi respondido.
+
+Pré-condição:
+
+    1. E-mail cadastrado já existe no banco;
+    2. Estar logado no gmail.
+
+Ações:
+
+    1 - Acessar o formulário através do link: https://forms.gle/zUvT3uQu4AGC7gr47;
+
+Resultados esperados:
+
+    1 - Apresenta a mensagem:
+         "Você já respondeu
+         Seu cadastro foi realizado com sucesso!
+         Você só pode preencher este formulário uma vez.
+         Tente entrar em contato com o proprietário do formulário se achar que isso é um erro."
+    2 - Aparece o texto "Edite a sua resposta" com o hiperlink para editar o formulário.
+
+
+

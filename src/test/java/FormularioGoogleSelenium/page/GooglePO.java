@@ -54,8 +54,8 @@ public class GooglePO extends BasePO {
     }
 
     /**
-     * Método que irá pesquisar no google o texto informado
-     * @param texto Texto a ser pesquisado
+     * Método que irá digitar o nome
+     * @param texto Texto a ser digitado
      * @throws InterruptedException
      */
     public void inserirNome(String texto) throws InterruptedException {
@@ -64,8 +64,8 @@ public class GooglePO extends BasePO {
     }
 
     /**
-     * Método que irá pesquisar no google o texto informado
-     * @param texto Texto a ser pesquisado
+     * Método que irá digitar o email
+     * @param texto Texto a ser digitado
      * @throws InterruptedException
      */
     public void inserirEmail(String texto) throws InterruptedException {
@@ -74,8 +74,8 @@ public class GooglePO extends BasePO {
     }
 
     /**
-     * Método que irá pesquisar no google o texto informado
-     * @param texto Texto a ser pesquisado
+     * Método que irá selecionar a bandeira visa
+     * @param texto Opção a sser selecionada
      * @throws InterruptedException
      */
     public void selecionarBandeiraVisa() throws InterruptedException {
@@ -84,8 +84,8 @@ public class GooglePO extends BasePO {
     }
 
     /**
-     * Método que irá pesquisar no google o texto informado
-     * @param texto Texto a ser pesquisado
+     * Método que irá selecionar a bandeira masterccard
+     * @param texto Opção a ser selecionada
      * @throws InterruptedException
      */
     public void selecionarBandeiraMaster() throws InterruptedException {
@@ -94,8 +94,8 @@ public class GooglePO extends BasePO {
     }
 
     /**
-     * Método que irá pesquisar no google o texto informado
-     * @param texto Texto a ser pesquisado
+     * Método que irá selecionar a bandeira elo
+     * @param texto Opção a ser selecionada
      * @throws InterruptedException
      */
     public void selecionarBandeiraElo() throws InterruptedException {
@@ -104,8 +104,8 @@ public class GooglePO extends BasePO {
     }
 
     /**
-     * Método que irá pesquisar no google o texto informado
-     * @param texto Texto a ser pesquisado
+     * Método que digita o numero do cartão de crédito
+     * @param texto Texto a ser digitado
      * @throws InterruptedException
      */
     public void inserirNumeroCartao(String texto) throws InterruptedException {
@@ -114,8 +114,8 @@ public class GooglePO extends BasePO {
     }
     
     /**
-     * Método que irá pesquisar no google o texto informado
-     * @param texto Texto a ser pesquisado
+     * Método que digita a data de nascimento
+     * @param texto Texto a ser digitado
      * @throws InterruptedException
      */
     public void inserirDataNascimento(String texto) throws InterruptedException {
@@ -124,8 +124,8 @@ public class GooglePO extends BasePO {
     }
 
     /**
-     * Método que irá pesquisar no google o texto informado
-     * @param texto Texto a ser pesquisado
+     * Método que clica no botão enviar
+     * @param texto Botão a ser clicado
      * @throws InterruptedException
      */
     public void clicarEmEnviar() throws InterruptedException {
@@ -134,8 +134,8 @@ public class GooglePO extends BasePO {
     }
 
     /**
-     * Método que irá pesquisar no google o texto informado
-     * @param texto Texto a ser pesquisado
+     * Método que cclica no botão limpar formulário
+     * @param texto Botão a ser clicado
      * @throws InterruptedException
      */
     public void clicarEmLimparFormulario() throws InterruptedException {
@@ -144,8 +144,8 @@ public class GooglePO extends BasePO {
     }
 
     /**
-     * Método que irá pesquisar no google o texto informado
-     * @param texto Texto a ser pesquisado
+     * Método que clica no botão confirmar o cancelamento da limpeza de formulário
+     * @param texto Botão a ser clicado
      * @throws InterruptedException
      */
     public void clicarEmConfirmarLimparFormulario() throws InterruptedException {
@@ -154,8 +154,8 @@ public class GooglePO extends BasePO {
     }
 
     /**
-     * Método que irá pesquisar no google o texto informado
-     * @param texto Texto a ser pesquisado
+     * Método que clica no botão cancelar
+     * @param texto Botão a ser clicado
      * @throws InterruptedException
      */
     public void clicarEmCacelarFormulario() throws InterruptedException {
@@ -164,8 +164,8 @@ public class GooglePO extends BasePO {
     }
 
     /**
-     * Método que irá pesquisar no google o texto informado
-     * @param texto Texto a ser pesquisado
+     * Método que irá clicar no botão Editar
+     * @param texto Botão a ser clicado
      * @throws InterruptedException
      */
     public void clicarEmEditar() throws InterruptedException {

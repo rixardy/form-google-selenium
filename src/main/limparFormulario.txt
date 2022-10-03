@@ -1,0 +1,37 @@
+Projeto: Cadastro de Clientes | ID: CT-04
+Ambiente: Web, Chrome, Firefox
+Autor: Ricardo Carvalho Pires
+Título: Limpar formulário
+
+
+Objetivo do teste:
+
+    Verificar se o botão "Limpar formulário" apaga todas as informações preenchidas.
+
+Pré-condições:
+
+    1. Formulário com 1 ou mais campos prenchidos;
+    2. Botão limpar formulário disponível.
+
+Ações:
+
+    1 - Acessar a página do formulário através do link: https://forms.gle/zUvT3uQu4AGC7gr47;
+    2 - Preencher 1 ou mais campos com dados válidos ou inválidos:
+        • Nome;
+        • E-mail;
+        • Cartão de crédito(Bandeira);
+        • Número do cartão;
+        • Data de nascimento.
+    3 - Clicar em limpar formulário;
+    4 - Quando aparecer a pergunta "Limpar formulário" clicar em Limpar formulário;
+    5 - Verificar se as informações preenchidas foram apagadas.
+
+Resultados esperados:
+
+    1 - Após clicar em "limpar formulário" aparece mensagem de "Limpar formulário? Com isso, todas as respostas serão removidas.
+    Não será possível desfazer esta ação." com os botões cancelar e limpar formulário;
+    2 - Após clicar em "limpar formulário" os campos preenchidos são apagados;
+    3 - O Cliente permanece na tela de cadastro.
+
+
+

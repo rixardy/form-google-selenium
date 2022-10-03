@@ -1,0 +1,37 @@
+Projeto: Cadastro de Clientes | ID: CT-08
+Ambiente: Web, Chrome, Firefox
+Autor: Ricardo Carvalho Pires
+Título: Cliente edita o cadastrado
+
+
+Objetivo do teste:
+
+    Editar dados do formulário de cadastro de clientes.
+
+Pré-condição:
+
+    1. Acessar o formulário de cadastro através do link;
+    2. Estar logado no gmail;
+    3. Apresenta a mensagem:
+                "Você já respondeu
+                Seu cadastro foi realizado com sucesso!
+                Você só pode preencher este formulário uma vez.
+                Tente entrar em contato com o proprietário do formulário se achar que isso é um erro."
+    4. Link de "Edite a sua resposta" disponível na página para editar o formulário.
+
+Ações:
+
+    1 - Clicar no hiperlink "Edite a sua resposta";
+    2 - Editar a resposta dos campos;
+    3 - Clicar no botão enviar.
+
+Resultados esperados:
+
+    1 - Todos os campos estão preenchidos;
+    2 - Todos os campos são editáveis;
+    3 - Após clicar no botão enviar é exibida a mensagem de sucesso: "Seu cadastro foi realizado com sucesso!";
+    4 - O formulário foi submetido;
+    5 - Os dados do cliente são salvos no banco.
+
+
+

@@ -1,0 +1,36 @@
+Projeto: Cadastro de Clientes | ID: CT-02
+Ambiente: Web, Chrome, Firefox
+Autor: Ricardo Carvalho Pires
+Título: Validar campos obrigatórios
+
+
+Objetivo do teste:
+
+    Validar os campos obrigatórios no formulário de cadastro
+
+Pré-condições:
+
+    1. Formulário é carregado com os campos vazios;
+    2. O formulário exibe "*" (asterisco) no título dos campos.
+
+Ações:
+
+    1 - Acessar a tela do formulário através do link: https://forms.gle/zUvT3uQu4AGC7gr47;
+    2 - Clicar em todos os campos;
+    3 - Não preencher os campos:
+        • Nome;
+        • E-mail;
+        • Número do cartão;
+        • Data de nascimento.
+    4 - Marcar e desmarcar o cartão de crédito (bandeira);
+    5 - Clicar em enviar;
+
+Resultados esperados:
+
+    1 - A mensagem "Esta pergunta é obrigatória" aparece em vermelho abaixo dos campos não preenchidos;
+    2 - Após clicar em enviar o foco passa para o primeiro campo obrigatório (Nome);
+    3 - O formulário não é submetido;
+    4 - Cliente permanece na tela de cadastro.
+
+
+

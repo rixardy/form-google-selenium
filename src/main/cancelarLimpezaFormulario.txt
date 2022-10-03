@@ -1,0 +1,35 @@
+Projeto: Cadastro de Clientes | ID: CT-05
+Ambiente: Web, Chrome, Firefox
+Autor: Ricardo Carvalho Pires
+Título: Cancelar limpeza de formulário
+
+
+Objetivo do teste:
+
+    Verificar o botão "Cancelar".
+
+Pré-condições:
+
+    1. Botão limpar formulário disponível;
+    2. Botão cancelar disponível.
+
+Ações:
+
+    1 - Acessar a página do formulário através do link: https://forms.gle/zUvT3uQu4AGC7gr47;
+    2 - Preencher 1 ou mais campos:
+        • Nome;
+        • E-mail;
+        • Cartão de crédito(Bandeira);
+        • Número do cartão;
+        • Data de nascimento.
+    3 - Clicar em limpar formulário;
+    4 - Quando aparecer a pergunta "Limpar formulário?" clicar em Cancelar;
+    5 - Verificar se as informações digitadas permanecem intactas.
+
+Resultados esperados:
+
+    1 - Após clicar em "Cancelar" as informações digitadas permanecem intactas;
+    2 - O Cliente permanece na tela de cadastro.
+
+
+

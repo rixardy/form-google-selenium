@@ -5,7 +5,7 @@ import org.openqa.selenium.support.PageFactory;
 
 /**
  * Classe base para criação das novas PagesObjects
- * Todas as pages deveem ser herdadas desta classe
+ * Todas as pages devem ser herdadas desta classe
  */
 public abstract class BasePO {
     /**Driver base que será usada por todas as pages */    

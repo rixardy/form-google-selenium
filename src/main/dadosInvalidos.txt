@@ -1,0 +1,39 @@
+Projeto: Cadastro de Clientes | ID: CT-03
+Ambiente: Web, Chrome, Firefox
+Autor: Ricardo Carvalho Pires
+Título: Validar mensagens de informações inválidas
+
+
+Objetivo do teste:
+
+    Apresentar aviso de preenchimento inválido nos campos do formulário de cadastro.
+
+Pré-condição:
+
+    1. Formulário é carregado com os campos vazios;
+
+Ações:
+
+    1 - Acessar a tela do formulário através do link: https://forms.gle/zUvT3uQu4AGC7gr47;
+    2 - Preencher campos com caracteres inválidos:
+        • Nome (preencher com números e caracteres especiais);
+        • E-mail (preencher sem "@" (arroba) e sem ".com");
+        • Cartão de crédito (selecionar mais de uma bandeira);
+        • Número do cartão (preencher com letras e caracteres especiais);
+        • Data de nascimento (digitar datas inexistentes).
+    4 - Clicar em enviar;
+
+Resultados esperados:
+
+    1 - As mensagens de aviso aparecem em vermelho abaixo dos campos:
+        • Nome: "Preencha com um nome válido(sem números e caracteres especiais)"
+        • E-mail: "Digite um e-mail válido. Exemplo: exemplo@gmail.com";
+        • Cartão de crédito: "Escolha apenas uma bandeira";
+        • Número do cartão: "Digite apenas números";
+        • Data de nascimento: "Data inválida".
+    2 - Após clicar em enviar o foco é redirecionado para o primeiro campo com informações inválidas;
+    3 - O formulário não é submetido;
+    4 - O Cliente permanece na tela de cadastro.
+
+
+
