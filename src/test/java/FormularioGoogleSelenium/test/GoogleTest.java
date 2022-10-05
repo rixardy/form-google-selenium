@@ -48,7 +48,7 @@ public class GoogleTest extends BaseTest {
 
         googlePage.inserirNome("212141224");
 
-        googlePage.inserirEmail("rixardy@gmail.com");
+        googlePage.inserirEmail("rixardy#gmail.com");
 
         googlePage.selecionarBandeiraVisa();
         googlePage.selecionarBandeiraMaster();
@@ -124,7 +124,7 @@ public class GoogleTest extends BaseTest {
 
         googlePage.inserirNome("Ricardo Carvalho Pires");
 
-        googlePage.inserirEmail("rixardy@gmail.com");
+        googlePage.inserirEmail("rixardy@hotmail.com");
 
         googlePage.selecionarBandeiraVisa();
 
@@ -139,19 +139,33 @@ public class GoogleTest extends BaseTest {
     @Test
     public void CT08_editarCadastro() throws InterruptedException{
 
-        googlePage.inserirNome("Ricardo Carvalho Pires");
+        googlePage.inserirNome("Ricardo Santos Pires");
 
-        googlePage.inserirEmail("rixardy@gmail.com");
+        googlePage.inserirEmail("rixardy@hotmail.com");
 
         googlePage.selecionarBandeiraVisa();
 
         googlePage.inserirNumeroCartao("111122223333334444");
 
-        googlePage.inserirDataNascimento("23/01/1988");
+        googlePage.inserirDataNascimento("23/01/1990");
 
         googlePage.clicarEmEnviar();
 
         googlePage.clicarEmEditar();
+
+        googlePage.limpar();
+
+        googlePage.inserirNome("Ricardo Pires Santos");
+
+        googlePage.inserirEmail("teste@gmail.com");
+
+        googlePage.selecionarBandeiraElo();
+
+        googlePage.inserirNumeroCartao("111122223333334444");
+
+        googlePage.inserirDataNascimento("23/01/1988");
+
+        googlePage.clicarEmEnviarEditar();
 
     }
 }

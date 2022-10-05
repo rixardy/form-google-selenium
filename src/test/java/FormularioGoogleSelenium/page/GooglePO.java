@@ -42,8 +42,6 @@ public class GooglePO extends BasePO {
     @FindBy(css = "body>div.Uc2NEf>div:nth-child(2)>div.RH5hzf.RLS9Fe>div>div.c2gzEf>a")
     public WebElement cliarEmEditar;
 
-
-    
     /**
      * Construtor para criação da página do google
      * @param driver Driver da página do google
@@ -75,7 +73,6 @@ public class GooglePO extends BasePO {
 
     /**
      * Método que irá selecionar a bandeira visa
-     * @param texto Opção a sser selecionada
      * @throws InterruptedException
      */
     public void selecionarBandeiraVisa() throws InterruptedException {
@@ -85,7 +82,6 @@ public class GooglePO extends BasePO {
 
     /**
      * Método que irá selecionar a bandeira masterccard
-     * @param texto Opção a ser selecionada
      * @throws InterruptedException
      */
     public void selecionarBandeiraMaster() throws InterruptedException {
@@ -95,7 +91,6 @@ public class GooglePO extends BasePO {
 
     /**
      * Método que irá selecionar a bandeira elo
-     * @param texto Opção a ser selecionada
      * @throws InterruptedException
      */
     public void selecionarBandeiraElo() throws InterruptedException {
@@ -125,7 +120,6 @@ public class GooglePO extends BasePO {
 
     /**
      * Método que clica no botão enviar
-     * @param texto Botão a ser clicado
      * @throws InterruptedException
      */
     public void clicarEmEnviar() throws InterruptedException {
@@ -134,8 +128,16 @@ public class GooglePO extends BasePO {
     }
 
     /**
+     * Método que clica no botão enviar
+     * @throws InterruptedException
+     */
+    public void clicarEmEnviarEditar() throws InterruptedException {
+        Thread.sleep(1000);
+        buttonEnviarEditar.click();
+    }
+
+    /**
      * Método que cclica no botão limpar formulário
-     * @param texto Botão a ser clicado
      * @throws InterruptedException
      */
     public void clicarEmLimparFormulario() throws InterruptedException {
@@ -145,7 +147,6 @@ public class GooglePO extends BasePO {
 
     /**
      * Método que clica no botão confirmar o cancelamento da limpeza de formulário
-     * @param texto Botão a ser clicado
      * @throws InterruptedException
      */
     public void clicarEmConfirmarLimparFormulario() throws InterruptedException {
@@ -155,7 +156,6 @@ public class GooglePO extends BasePO {
 
     /**
      * Método que clica no botão cancelar
-     * @param texto Botão a ser clicado
      * @throws InterruptedException
      */
     public void clicarEmCacelarFormulario() throws InterruptedException {
@@ -165,12 +165,35 @@ public class GooglePO extends BasePO {
 
     /**
      * Método que irá clicar no botão Editar
-     * @param texto Botão a ser clicado
      * @throws InterruptedException
      */
     public void clicarEmEditar() throws InterruptedException {
         Thread.sleep(1000);
         cliarEmEditar.click();
+    }
+
+    /**
+     * Método que limpar todos os campos
+     * @throws InterruptedException
+     */
+    public void limpar() throws InterruptedException {
+        Thread.sleep(1000);
+        inputNome.clear();
+        inputEmail.clear();
+        if (checkBandeiraVisa.isDisplayed())
+        {
+            checkBandeiraVisa.click();
+        }
+        if (checkBandeiraMaster.isDisplayed())
+        {
+            checkBandeiraMaster.click();
+        }
+        if (checkBandeiraElo.isDisplayed())
+        {
+            checkBandeiraElo.click();
+        }
+        inputCartao.clear();
+        inputDataNascimento.clear();
     }
 
 }
