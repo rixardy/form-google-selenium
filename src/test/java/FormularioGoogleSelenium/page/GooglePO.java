@@ -128,15 +128,6 @@ public class GooglePO extends BasePO {
     }
 
     /**
-     * Método que clica no botão enviar
-     * @throws InterruptedException
-     */
-    public void clicarEmEnviarEditar() throws InterruptedException {
-        Thread.sleep(1000);
-        buttonEnviarEditar.click();
-    }
-
-    /**
      * Método que cclica no botão limpar formulário
      * @throws InterruptedException
      */
