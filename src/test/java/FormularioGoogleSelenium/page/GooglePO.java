@@ -52,23 +52,13 @@ public class GooglePO extends BasePO {
     }
 
     /**
-     * Método que irá digitar o nome
+     * Método que irá escrever nos campos de texto
      * @param texto Texto a ser digitado
      * @throws InterruptedException
      */
-    public void inserirNome(String texto) throws InterruptedException {
+    public void escrever(WebElement input,String texto) throws InterruptedException {
         Thread.sleep(1000);
-        inputNome.sendKeys(texto);
-    }
-
-    /**
-     * Método que irá digitar o email
-     * @param texto Texto a ser digitado
-     * @throws InterruptedException
-     */
-    public void inserirEmail(String texto) throws InterruptedException {
-        Thread.sleep(1000);
-        inputEmail.sendKeys(texto);
+        input.sendKeys(texto);
     }
 
     /**
@@ -96,26 +86,6 @@ public class GooglePO extends BasePO {
     public void selecionarBandeiraElo() throws InterruptedException {
         Thread.sleep(1000);
         checkBandeiraElo.click();
-    }
-
-    /**
-     * Método que digita o numero do cartão de crédito
-     * @param texto Texto a ser digitado
-     * @throws InterruptedException
-     */
-    public void inserirNumeroCartao(String texto) throws InterruptedException {
-        Thread.sleep(1000);
-        inputCartao.sendKeys(texto);
-    }
-    
-    /**
-     * Método que digita a data de nascimento
-     * @param texto Texto a ser digitado
-     * @throws InterruptedException
-     */
-    public void inserirDataNascimento(String texto) throws InterruptedException {
-        Thread.sleep(1000);
-        inputDataNascimento.sendKeys(texto);
     }
 
     /**

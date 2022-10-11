@@ -29,15 +29,15 @@ public class GoogleTest extends BaseTest {
     @Test
     public void CT02_verificarCamposObrigatorios() throws InterruptedException{
 
-        googlePage.inserirNome("");
+        googlePage.escrever(googlePage.inputNome, "");
 
-        googlePage.inserirEmail("");
+        googlePage.escrever(googlePage.inputEmail, "");
 
         googlePage.selecionarBandeiraVisa();
 
-        googlePage.inserirNumeroCartao("");
+        googlePage.escrever(googlePage.inputCartao,"");
 
-        googlePage.inserirDataNascimento("");
+        googlePage.escrever(googlePage.inputDataNascimento,"");
 
         googlePage.clicarEmEnviar();
 
@@ -46,17 +46,17 @@ public class GoogleTest extends BaseTest {
     @Test
     public void CT03_dadosInvalidos() throws InterruptedException{
 
-        googlePage.inserirNome("212141224");
+        googlePage.escrever(googlePage.inputNome,"212141224");
 
-        googlePage.inserirEmail("rixardy#gmail.com");
+        googlePage.escrever(googlePage.inputEmail,"rixardy#gmail.com");
 
         googlePage.selecionarBandeiraVisa();
         googlePage.selecionarBandeiraMaster();
         googlePage.selecionarBandeiraElo();
 
-        googlePage.inserirNumeroCartao("werwerwerwerwerwerw");
+        googlePage.escrever(googlePage.inputCartao,"werwerwerwerwerwerw");
 
-        googlePage.inserirDataNascimento("32/01/1988");
+        googlePage.escrever(googlePage.inputDataNascimento,"32/01/1988");
 
         googlePage.clicarEmEnviar();
 
@@ -65,17 +65,17 @@ public class GoogleTest extends BaseTest {
     @Test
     public void CT04_limparFormulario() throws InterruptedException{
 
-        googlePage.inserirNome("212141224");
+        googlePage.escrever(googlePage.inputNome,"212141224");
 
-        googlePage.inserirEmail("rixardy#gmail.com");
+        googlePage.escrever(googlePage.inputEmail,"rixardy#gmail.com");
 
         googlePage.selecionarBandeiraVisa();
         googlePage.selecionarBandeiraMaster();
         googlePage.selecionarBandeiraElo();
 
-        googlePage.inserirNumeroCartao("werwerwerwerwerwerw");
+        googlePage.escrever(googlePage.inputCartao,"werwerwerwerwerwerw");
 
-        googlePage.inserirDataNascimento("32/01/1988");
+        googlePage.escrever(googlePage.inputDataNascimento,"32/01/1988");
 
         googlePage.clicarEmLimparFormulario();
         googlePage.clicarEmConfirmarLimparFormulario();
@@ -85,17 +85,17 @@ public class GoogleTest extends BaseTest {
     @Test
     public void CT05_cancelarLimparFormulario() throws InterruptedException{
 
-        googlePage.inserirNome("212141224");
+        googlePage.escrever(googlePage.inputNome,"212141224");
 
-        googlePage.inserirEmail("rixardy#gmail.com");
+        googlePage.escrever(googlePage.inputEmail,"rixardy#gmail.com");
 
         googlePage.selecionarBandeiraVisa();
         googlePage.selecionarBandeiraMaster();
         googlePage.selecionarBandeiraElo();
 
-        googlePage.inserirNumeroCartao("werwerwerwerwerwerw");
+        googlePage.escrever(googlePage.inputCartao,"werwerwerwerwerwerw");
 
-        googlePage.inserirDataNascimento("32/01/1988");
+        googlePage.escrever(googlePage.inputDataNascimento,"32/01/1988");
 
         googlePage.clicarEmLimparFormulario();
         googlePage.clicarEmCacelarFormulario();
@@ -105,15 +105,15 @@ public class GoogleTest extends BaseTest {
     @Test
     public void CT06_cadastrarComSucesso() throws InterruptedException{
 
-        googlePage.inserirNome("Ricardo Carvalho Pires");
+        googlePage.escrever(googlePage.inputNome,"Ricardo Carvalho Pires");
 
-        googlePage.inserirEmail("rixardy@gmail.com");
+        googlePage.escrever(googlePage.inputEmail,"rixardy@gmail.com");
 
         googlePage.selecionarBandeiraMaster();
 
-        googlePage.inserirNumeroCartao("111122223333334444");
+        googlePage.escrever(googlePage.inputCartao,"111122223333334444");
 
-        googlePage.inserirDataNascimento("23/01/1988");
+        googlePage.escrever(googlePage.inputDataNascimento,"23/01/1988");
 
         googlePage.clicarEmEnviar();
 
@@ -122,15 +122,15 @@ public class GoogleTest extends BaseTest {
     @Test
     public void CT07_clienteCadastrado() throws InterruptedException{
 
-        googlePage.inserirNome("Ricardo Carvalho Pires");
+        googlePage.escrever(googlePage.inputNome,"Ricardo Carvalho Pires");
 
-        googlePage.inserirEmail("rixardy@hotmail.com");
+        googlePage.escrever(googlePage.inputEmail,"rixardy@hotmail.com");
 
         googlePage.selecionarBandeiraVisa();
 
-        googlePage.inserirNumeroCartao("111122223333334444");
+        googlePage.escrever(googlePage.inputCartao,"111122223333334444");
 
-        googlePage.inserirDataNascimento("23/01/1988");
+        googlePage.escrever(googlePage.inputDataNascimento,"23/01/1988");
 
         googlePage.clicarEmEnviar();
 
@@ -139,15 +139,15 @@ public class GoogleTest extends BaseTest {
     @Test
     public void CT08_editarCadastro() throws InterruptedException{
 
-        googlePage.inserirNome("Ricardo Santos Pires");
+        googlePage.escrever(googlePage.inputNome,"Ricardo Santos Pires");
 
-        googlePage.inserirEmail("rixardy@hotmail.com");
+        googlePage.escrever(googlePage.inputEmail,"rixardy@hotmail.com");
 
         googlePage.selecionarBandeiraVisa();
 
-        googlePage.inserirNumeroCartao("111122223333334444");
+        googlePage.escrever(googlePage.inputCartao,"111122223333334444");
 
-        googlePage.inserirDataNascimento("23/01/1990");
+        googlePage.escrever(googlePage.inputDataNascimento,"23/01/1990");
 
         googlePage.clicarEmEnviar();
 
@@ -155,17 +155,15 @@ public class GoogleTest extends BaseTest {
 
         googlePage.limpar();
 
-        googlePage.inserirNome("Ricardo Pires Santos");
+        googlePage.escrever(googlePage.inputNome,"Ricardo Pires Santos");
 
-        googlePage.inserirEmail("teste@gmail.com");
+        googlePage.escrever(googlePage.inputEmail,"teste@gmail.com");
 
         googlePage.selecionarBandeiraElo();
 
-        googlePage.inserirNumeroCartao("111122223333334444");
+        googlePage.escrever(googlePage.inputCartao,"111122223333334444");
 
-        googlePage.inserirDataNascimento("23/01/1988");
-
-        googlePage.clicarEmEnviarEditar();
+        googlePage.escrever(googlePage.inputDataNascimento,"23/01/1988");
 
     }
 }
