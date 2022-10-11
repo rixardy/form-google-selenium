@@ -30,6 +30,9 @@ public class GooglePO extends BasePO {
     @FindBy(css = "#mG61Hd>div.RH5hzf.RLS9Fe>div>div.ThHDze>div.DE3NNc.CekdCb>div.lRwqcd>div>span>span")
     public WebElement buttonEnviar;
 
+    @FindBy(css = "#mG61Hd>div.RH5hzf.RLS9Fe>div>div.ThHDze>div.DE3NNc>div>div>span>span")
+    public WebElement buttonEnviarEditar;
+
     @FindBy(css = "#mG61Hd>div.RH5hzf.RLS9Fe>div>div.ThHDze>div.DE3NNc.CekdCb>div.nYdzXd>div>span>span")
     public WebElement buttonLimparFormulario;
 
@@ -98,6 +101,15 @@ public class GooglePO extends BasePO {
     }
 
     /**
+     * Método que clica no botão enviar
+     * @throws InterruptedException
+     */
+    public void clicarEmEnviarEditar() throws InterruptedException {
+        Thread.sleep(1000);
+        buttonEnviarEditar.click();
+    }
+
+    /**
      * Método que cclica no botão limpar formulário
      * @throws InterruptedException
      */
@@ -141,15 +153,15 @@ public class GooglePO extends BasePO {
         Thread.sleep(1000);
         inputNome.clear();
         inputEmail.clear();
-        if (checkBandeiraVisa.isDisplayed())
+        if (checkBandeiraVisa.isEnabled())
         {
             checkBandeiraVisa.click();
         }
-        if (checkBandeiraMaster.isDisplayed())
+        if (checkBandeiraMaster.isSelected())
         {
             checkBandeiraMaster.click();
         }
-        if (checkBandeiraElo.isDisplayed())
+        if (checkBandeiraElo.isSelected())
         {
             checkBandeiraElo.click();
         }
